@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../assets/font/Google_Sans/static/GoogleSans_17pt-Regular.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: white;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+main {
+    padding-top: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main a .retourne {
+    display: flex;
+    height: 1em;
+    align-items: center;
+    width: 15em;
+    margin-right: 45vw;
+}
+
+
+main a .retourne img {
+    height: 100%;
+    margin-right: 1em;
+}
+
+main a .retourne p {
+    opacity: 0.7;
+}
+
+main .presentation {
+    margin-top: 6em;
+    width: 80vw;
+    /*background-color: aquamarine; */
+    margin-bottom: 5em;
+}
+
+main .presentation .entete {
+
+    padding-left: 5em;
+    border-radius: 20px 20px 0px 0px;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*-_---------------------------------------------------------------------------------------------------*/
+/*-_---------------------------------------------------------------------------------------------------*/
+/*-_---------------------------------------------------------------------------------------------------*/
+
+main .presentation .enteteScience {
+    background: #165EFC;
+    background: linear-gradient(90deg, rgba(22, 94, 252, 1) 0%, rgba(245, 247, 251, 1) 100%);
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation {
+    background-color: #175ffc73;
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation .iconeNom {
+    background-color: blue;
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table thead {
+    background-color: #165ffc;
+}
+
+
+
+
+main .presentationArt .corps .teacherSection ul li .enseignantPresentation {
+    background-color: #17fc3273;
+}
+
+main .presentationArt .corps .teacherSection ul li .enseignantPresentation .iconeNom {
+    background-color: green;
+}
+
+main .presentationArt .corps .emploisDuTemps .emploisDuTempsTableContainer table thead {
+    background-color: #16fc38;
+}
+
+main .presentation .enteteArt {
+    background: #16C072;
+    background: linear-gradient(90deg, rgba(22, 192, 114, 1) 0%, rgba(245, 251, 247, 1) 100%);
+}
+
+
+main .presentationCOM .enteteArt {
+    background: #FC223B;
+    background: linear-gradient(90deg, rgba(252, 34, 59, 1) 0%, rgba(251, 245, 245, 1) 100%);
+}
+
+main .presentationCOM .corps .teacherSection ul li .enseignantPresentation {
+    background-color: #fc171773;
+}
+
+main .presentationCOM .corps .teacherSection ul li .enseignantPresentation .iconeNom {
+    background-color: red;
+}
+
+main .presentationCOM .corps .emploisDuTemps .emploisDuTempsTableContainer table thead {
+    background-color: #fc1616;
+}
+
+/*-_---------------------------------------------------------------------------------------------------*/
+/*-_---------------------------------------------------------------------------------------------------*/
+/*-_---------------------------------------------------------------------------------------------------*/
+main .presentation .entete p {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    text-align: center;
+    width: 5em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+main .presentation .entete h2 {
+    color: white;
+    opacity: 0.9;
+    font-size: 2.3em;
+}
+
+main .presentation .corps {
+    /* background-color: #fc1631; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    -webkit-box-shadow: -2px 6px 11px -1px #000000;
+    box-shadow: -2px 6px 11px -1px #000000;
+    border-radius: 0px 0px 20px 20px;
+}
+
+main .presentation .corps h4 {
+    font-size: 1.3em;
+}
+
+main .presentation .corps .description {
+    margin-top: 2em;
+    opacity: 0.8;
+}
+
+main .presentation .corps .teacherSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+main .presentation .corps .teacherSection .title {
+    display: flex;
+    flex-direction: row;
+    height: 2.5em;
+    align-items: center;
+}
+
+main .presentation .corps .teacherSection .title img {
+    height: 100%;
+    margin-right: 2em;
+}
+
+main .presentation .corps .teacherSection ul {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 100%;
+    /*background-color: bisque;*/
+}
+
+main .presentation .corps .teacherSection ul li {
+    /* background-color: yellow; */
+    /*width: 10em;*/
+    flex: 0 0 15em;
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-left: 1.5em;
+    border-radius: 10px;
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation .iconeNom {
+    border-radius: 10em;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation .iconeNom p {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 800;
+}
+
+main .presentation .corps .teacherSection ul li .enseignantPresentation>p {
+    color: white;
+    font-weight: 500;
+
+}
+
+main .presentation .corps .emploisDuTemps {
+    display: flex;
+    flex-direction: column;
+}
+
+main .presentation .corps .emploisDuTemps .title {
+    display: flex;
+    align-items: center;
+    height: 2.5em;
+    /*background-color: #165EFC;*/
+    margin-top: 2em;
+}
+
+main .presentation .corps .emploisDuTemps .title img {
+    height: 100%;
+    margin-right: 2em;
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table thead {
+    height: 3em;
+    font-size: 1.3em;
+    color: white;
+}
+
+
+main .presentation .corps .Insciption{
+    margin-top: 3em;
+    border-radius: 20px;
+    padding: 1em 2em;
+    border: 1px solid #1447E6;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF6FF;
+
+    justify-content: space-between;
+    height: 10em;
+    margin-bottom: 3em;
+}
+
+main .presentation .corps .Insciption a{
+    text-align: center;
+    color: white;
+    background-color: #1447E6;
+    width: 15%;
+    border-radius: 20px;
+    padding: 1em 1em;
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table td,
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table th {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+
+}
+
+main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table td {
+    padding: 1em;
+}
+
+@media (max-width: 1000px) {
+    main .presentation .corps .Insciption a{
+        width: 30%;
+    }
+}
+
+@media (max-width: 650px) {
+    main a .retourne{
+        margin-right: 10vh;
+    }
+    main .presentation .corps .Insciption{
+        padding: 0.5em 1em;
+        height: 12em;
+    }
+    main .presentation .corps .Insciption a{
+        width: 70%;
+    }
+    main .presentation {
+        width: 95vw;
+    }
+
+    main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer {
+        overflow-x: auto;
+        display: block;
+    }
+
+    main .presentation .corps .emploisDuTemps .emploisDuTempsTableContainer table td {
+        padding: 0.6em;
+    }
+}

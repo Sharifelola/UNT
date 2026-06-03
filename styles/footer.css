@@ -1,0 +1,64 @@
+footer {
+    background-color: #1a2236;
+    padding: 60px 20px 20px 20px;
+    color: #ffffff;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.foot > div {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    color: #acafb0;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+footer a {
+    color: #acafb0;
+}
+footer a:hover{
+    color: white;
+}
+
+.image {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.image img {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.fin {
+    text-align: center;
+    color: #acafb0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.copy {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}

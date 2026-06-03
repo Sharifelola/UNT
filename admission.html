@@ -1,0 +1,228 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Université-Des-Nouvelles-Tecnologies</title>
+
+    <link rel="stylesheet" href="styles/bcx.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+        <header>
+        <div class="pesentation">
+            <img src="assets/img/logo.png" alt="logo de l'etablissement">
+            <div class="title">
+                <h2>UNT</h2>
+                <h3>Universite des nouvelles technologie</h3>
+            </div>
+
+        </div>
+        <nav>
+            <img src="assets/img/hamburger.png" alt="hamburger" id="hamburger">
+            <ul>
+                <li ><a href="index.html">Accueil</a></li>
+                <li><a href="accademie.html">Accademie</a></li>
+                <li class="active"><a href="admission-page.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+        <div id="hideNav">
+            <img src="assets/img/close.png" alt="close nav" id="navCloseButton">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="accademie.html">Accademie</a></li>
+                <li><a href="admission-page.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="sect">
+        <div class="container">
+            <div class="stepper-header">
+                <div class="step-indicator active">1</div>
+                <div class="step-line"></div>
+                <div class="step-indicator">2</div>
+                <div class="step-line"></div>
+                <div class="step-indicator">3</div>
+                <div class="step-line"></div>
+                <div class="step-indicator">4</div>
+                <div class="step-line"></div>
+                <div class="step-indicator">5</div>
+                <div class="step-line"></div>
+                <div class="step-indicator">6</div>
+            </div>
+
+            <form id="multi-step-form">
+                <div class="form-step active">
+                    <div class="groupe-des-titres">
+                        <h2>Informations personnelles</h2>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="nom"><i class="fas fa-user"></i> Nom de famille <span>*</span></label>
+                        <input type="text" id="nom" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="prenom"><i class="fas fa-user-circle"></i> Prénom <span>*</span></label>
+                        <input type="text" id="prenom" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="date"><i class="fas fa-calendar-alt"></i> Date de naissance <span>*</span></label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="sexe"><i class="fas fa-venus-mars"></i> Genre <span>*</span></label>
+                        <div class="groupe-des-selecteurs">
+                            <select>
+                                <option value="S">Sélectionner</option>
+                                <option value="M">Masculin</option>
+                                <option value="F">Féminin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="nation"><i class="fas fa-globe"></i> Nationalité</label>
+                        <input type="text" id="nation" required>
+                    </div>
+                    <button type="button" class="bouton-avant">Suivant</button>
+                </div>
+                <div class="form-step">
+                    <div class="groupe-des-titres">
+                        <h2>Coordonnées</h2>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="email"><i class="fas fa-email"></i> Adresse e-mail <span>*</span></label>
+                        <input type="email" id="email" placeholder="nioussere@gmail.com" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="tel"><i class="fas fa-phone"></i> Numéro de téléphone <span>*</span></label>
+                        <input type="tel" id="tel" placeholder="+226 70 00 00 00" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="ville"><i class="fas fa-map-marker-alt"></i> Ville </label>
+                        <input type="text" id="ville" placeholder="facultatif">
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="BP"><i class="fas fa-mail-bulk"></i> Code postal</label>
+                        <input type="text" id="BP" placeholder="facultatif">
+                    </div>
+                    <div class="groupe-des-boutons">
+                        <button type="button" class="bouton-retour">Retour</button>
+                        <button type="button" class="bouton-avant">Suivant</button>
+                    </div>
+                </div>
+                <div class="step-form">
+                    <div class="groupe-des-titres">
+                        <h2>Formation Académique</h2>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="diplome"><i class="fas fa-graduation-cap"></i> Dernier diplôme obtenu
+                            <span>*</span></label>
+                        <div class="groupe-des-selecteurs">
+                            <select>
+                                <option value="S">Sélectionner</option>
+                                <option value="BAC">Baccalauréat</option>
+                                <option value="LIC">Licence</option>
+                                <option value="MAS">Master</option>
+                                <option value="others">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="Etb"><i class="fas fa-school"></i> Établissement précédent <span>*</span></label>
+                        <input type="tel" id="Etb" required>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="annee"><i class="fas fa-calendar"></i> Année d'obtention <span>*</span></label>
+                        <input type="number" id="annee">
+                    </div>
+                    <button type="button" class="bouton-retour">Retour</button>
+                    <button type="button" class="bouton-avant">Suivant</button>
+                </div>
+                <div class="step-form">
+                    <div class="groupe-des-titres">
+                        <h2>Formation souhaité</h2>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="UFR"><i class="fas fa-school"></i> Unité de Formation et de Recherche (UFR)
+                            <span>*</span></label>
+                        <div class="groupe-des-selecteurs">
+                            <select>
+                                <option value="S">Sélectionner</option>
+                                <option value="DS">Département Sciences</option>
+                                <option value="DA">Département Arts</option>
+                                <option value="DC">Département Commerce</option>
+                                <option value="others">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="fill"><i class="fas fa-stream"></i> Fillière <span>*</span></label>
+                        <div class="groupe-des-selecteurs">
+                            <select>
+                                <option value="S">Sélectionner</option>
+                                <option value="IF">Informatique</option>
+                                <option value="Math">Mathématiques</option>
+                                <option value="A">Anglais</option>
+                                <option value="others3">Sociologie</option>
+                                <option value="others2">Marketing Digital</option>
+                                <option value="others1">Gestion d'Entreprise</option>
+                                <option value="others">Autres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="annee-deb"><i class="fas fa-clock"></i> Date de rentrée Académique
+                            <span>*</span></label>
+                        <div class="groupe-des-selecteurs">
+                            <select>
+                                <option value="S">Sélectionner</option>
+                                <option value="BAC">2026-2027</option>
+                                <option value="LIC">2027-2028</option>
+                                <option value="MAS">2028-2029</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="bouton-retour">Retour</button>
+                    <button type="button" class="bouton-avant">Suivant</button>
+                </div>
+                <div class="form-step">
+                    <div class="groupe-des-titres">
+                        <h2>Informations Complémentaires</h2>
+                    </div>
+                    <div class="groupe-des-inputs">
+                        <label for="motiv"><i class="fas fa-file-upload"></i> Lettre de motivation</label>
+                        <input type="file" id="motiv" placeholder="facultatif">
+                    </div>
+                    <div class="groupe-des-cases-a-cocher">
+                        <input type="checkbox" id="agree" required>
+                        <label for="terms">Je certifie que toutes les informations fournies sont exactes et complètes.
+                            J'accepte les conditions générales d'admission de l'École Supérieure Excellence.
+                            <span>*</span></label>
+                    </div>
+                    <button type="button" class="bouton-retour">Retour</button>
+                    <button type="button" class="bouton-avant">Suivant</button>
+                </div>
+                <div class="form-step">
+                    <div class="groupe-des-titres">
+                        <h2>Validation</h2>
+                    </div>
+                    <p>Acceptez-vous soummettre ces informations ?</p>
+                    <button type="button" class="bouton-retour">Non</button>
+                    <button type="submit" class="bouton-envoyer">Oui</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="script/script2.js"></script>
+    </section>
+    <footer id="myFooter"></footer>
+    <script src="script/script.js"></script>
+</body>
+
+
+</html>

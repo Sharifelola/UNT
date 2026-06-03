@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../assets/font/Google_Sans/static/GoogleSans_17pt-Regular.ttf') format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    padding: 2em;
+    width: 100vw;
+    height: 8em;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+}
+
+header .pesentation {
+    /* background-color: aqua; */
+    display: flex;
+    height: 4em;
+
+}
+
+header img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+header nav img {
+    display: none;
+}
+
+header .title {
+    margin-left: .5em;
+}
+
+header .title h3 {
+    opacity: 0.5;
+}
+
+header #hideNav {
+    display: none;
+}
+
+header nav {
+    /*background-color: beige; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    width: 100%;
+    font-size: 1.3em;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+header nav li {
+    /* background-color: antiquewhite; */
+    padding: .5em;
+    border-radius: 10px;
+}
+
+header nav .active {
+    background-color: rgba(0, 0, 255, 0.753);
+}
+
+header nav .active a {
+    color: white;
+}
+
+header nav li:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.073);
+}
+
+@media (max-width: 1000px) {
+    header * {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    
+    header {
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        width: 100vw;
+    }
+
+    header * {
+        font-size: 13px;
+    }
+
+    header .pesentation * {
+        font-size: 1em;
+    }
+
+    header nav {
+
+        width: auto;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav img {
+        display: inline;
+        height: 30px;
+        width: 30px;
+    }
+
+    /* pour le nav cacher */
+    header #hideNav {
+        display: none;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+        height: 55vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+    header #hideNav img {
+        height: 4em;
+    }
+
+    header #hideNav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        display: flex;
+        height: 90%;
+        justify-content: space-around;
+    }
+
+    header #hideNav ul li {
+        /*background-color: aqua;*/
+        height: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header #hideNav ul li a {
+        font-size: 2em;
+    }
+}
